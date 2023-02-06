@@ -1,0 +1,49 @@
+body{
+    background-color:rgb(3, 43, 50);
+}
+h1{
+    text-align:center;
+    color:white
+
+}
+#name-label,#email-label,#number-label{
+    display: block;
+    line-height:2em;
+    width:100%;
+}
+#email,#name,#number{
+    display: block;
+    width: 100%;
+}
+#description{
+    text-align: center;
+    color:white;
+}
+form{
+    padding:1em 1em;
+    margin: 20px;
+    
+    background-color:rgb(206, 232, 237);
+}
+fieldset{
+    border:none;
+    
+}
+#dropdown{
+    display:block;
+    line-height:2em;
+}
+label[id="gender"],[id="feedb"],[id="subjects"]
+{
+    display: block;
+    padding:1em 0;
+}
+
+#submit{
+    
+    background-color:rgb(60, 162, 60);
+    border:none;
+    width: 100%;
+    margin:auto 0;
+    
+}

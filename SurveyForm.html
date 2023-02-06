@@ -2,40 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-   
-    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1 id="title"> Personal information</h1>
       <p id="description">
-        please fill  this form 
+        This is to gather information about the students feedback. 
       </p>
     <form id="survey-form">
-      <label id="name-label">
+      <fieldset>
+      <label id="name-label">name
       <input type="text" id="name" required placeholder="xyz">
       </input>
       </label>
-      <label id="email-label">
+      <br>
+      <label id="email-label">Email
      <input type="email" id="email" required placeholder="xyz" >
       </input>
       </label>
-      <label id="number-label">
+      <br>
+      <label id="number-label">Age
        <input type="number" id="number" placeholder="xyz" min="13" max="100" >
       </input>
       </label>
+      <br>
+    </fieldset>
+      <fieldset>
+      <label id="grade">Mention your grade :
       <select id="dropdown">
-        <option value="1">ONE
-          </option>
-          <option value = "2">TWO
-            </option>
+        <option value="">select your grade : 
+        </option>
+        <option value="1">grade A
+        </option>
+        <option value = "2">Grade B
+        </option>
+        <option value = "3">Grade C
+        </option>
+      
+        </select></label>
+      </fieldset>
+      <fieldset>
+            <label id="gender">Gender:</label>
             <input type="radio" id="male" name="gender" value="male">Male</input>
             <input type="radio" id="female" name="gender" value="female">Female</input>
-
-            <input type="checkbox" name="subjects" value="1">Maths</input>
-            <input type="checkbox" name="subjects" value="2">Science</input>
+      </fieldset>
+      <fieldset>
+          <label id="subjects">Subjects :</label>
+            <input  type="checkbox" name="subjects" value="1">Maths</input>
+            <input  type="checkbox" name="subjects" value="2">Science</input>
+            <input  type="checkbox" name="subjects" value="3">History</input>
+      </fieldset>
+      <fieldset>
+        <label id="feedb">Your feedback :</label>
+          <input type="radio" name="feedback" value="1">Good</input>
+          <input type="radio" name="feedback" value="2">average</input>
+          <input type="radio" name="feedback" value="3">Bad</input>
+    </fieldset>
+      <fieldset>
         <textarea id="comments" name="comments" rows="4" cols="50">
-type anything
-</textarea>
+more comments 
+        </textarea>
+      </fieldset>
 <input type="submit" id="submit"></input> 
           
         </select>
